@@ -1,0 +1,242 @@
+<!-- <ion-header [translucent]="true">
+
+  <ion-toolbar>
+    <ion-title>
+      Ionic Segments
+    </ion-title>
+  </ion-toolbar>
+
+  <ion-toolbar color="primary">
+
+    <ion-segment 
+    value="all" 
+    color="tertiary" 
+    scrollable="true"
+    mode="ios"
+    [(ngModel)]="segmentModel" 
+    (ionChange)="segmentChanged($event)">
+
+      <ion-segment-button value="all">
+        <ion-label>All</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="favorites">
+        <ion-label>Favorites</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="settings">
+        <ion-label>Settings</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="profile">
+        <ion-label>Profile</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="just">
+        <ion-label>Just</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="onemore">
+        <ion-label>One More</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="tofill">
+        <ion-label>To Fill</ion-label>
+      </ion-segment-button>
+
+    </ion-segment>
+    
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content [fullscreen]="true" class="ion-padding">
+<!-- 
+  <ion-card *ngIf="segmentModel === 'all'">
+    
+    Primera pregunta
+    <ion-segment-button (click)="cambiopaso('favorites')">
+      <ion-label>Siguiente</ion-label>
+    </ion-segment-button>
+  </ion-card>
+  
+  <ion-card *ngIf="segmentModel === 'favorites'">
+    <ion-card-header>
+      <ion-card-subtitle>Segment Content</ion-card-subtitle>
+      <ion-card-title>Favorites</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card *ngIf="segmentModel === 'profile'">
+    <ion-card-header>
+      <ion-card-subtitle>Segment Content</ion-card-subtitle>
+      <ion-card-title>Profile</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="segmentModel === 'settings'">
+    <ion-card-header>
+      <ion-card-subtitle>Segment Content</ion-card-subtitle>
+      <ion-card-title>Settings</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="segmentModel === 'just'">
+    <ion-card-header>
+      <ion-card-subtitle>Segment Content</ion-card-subtitle>
+      <ion-card-title>Just</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="segmentModel === 'onemore'">
+    <ion-card-header>
+      <ion-card-subtitle>Segment Content</ion-card-subtitle>
+      <ion-card-title>One More</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="segmentModel === 'tofill'">
+    <ion-card-header>
+      <ion-card-subtitle>Segment Content</ion-card-subtitle>
+      <ion-card-title>To Fill</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+  </ion-card> -->
+  
+
+
+  <ion-grid>
+  <ion-row>
+    
+    <ion-col>
+      <strong> Funcionamiento del sistema </strong>
+    </ion-col>
+   </ion-row>
+   <ion-row>
+    <ion-col class="my-class">
+      ¿Cómo inicio la grabación?
+    </ion-col>
+   </ion-row>
+   <ion-row>
+    <ion-col>
+      Para iniciar debes seleccionar el icono(cámara) de color azul que dice: "Grabar".
+    </ion-col>
+   </ion-row>
+   <ion-row>
+    <ion-col class="my-class">
+      ¿De cuánto tiempo tiene que ser mi grabación?
+    </ion-col>
+   </ion-row>
+   <ion-row>
+    <ion-col>
+      El minimo de grabación de más de un minuto y se sugiere como un máximo 15 minutos.
+    </ion-col>
+   </ion-row>
+   <ion-row>
+    <ion-col class="my-class">
+      ¿Qué pasa si no sirve mi cámara?
+    </ion-col>
+   </ion-row>
+   <ion-row>
+    <ion-col>
+      Es indispensable la cámara para llevar a cabo el proceso, de lo contrario es necesario un dispositivo con cámara.
+    </ion-col>
+   </ion-row>
+   <ion-row>
+    <ion-col class="my-class">
+     ¿Qué navegadores soporta?
+    </ion-col>
+   </ion-row>
+   <ion-row>
+    <ion-col>
+     Por el momento solo contamos con soporte a Chrome.
+    </ion-col>
+   </ion-row>
+   <ion-row>
+    <ion-col class="my-class">
+     ¿Qué pasa si me ciera el explorador durante la grabación de un video?
+    </ion-col>
+   </ion-row>
+   <ion-row>
+    <ion-col>
+     En el caso de que suceda se recmienda ingresar nuevamente y volver a contestar la pregunta.
+    </ion-col>
+   </ion-row>
+   <ion-row>
+    <ion-col class="my-class">
+     ¿Qué pasa si mi conexión a internet es muy intermitente?
+    </ion-col>
+   </ion-row>
+   <ion-row>
+    <ion-col>
+     La aplicación está diseñada para sólo utilizar internet cuando se envía el video, probablemente demorarpa más de lo habitual, en caso de que no se logre subir el video, deberá intentarlo neuvamente con una conexión a internet más estable.
+    </ion-col>
+   </ion-row>
+   <ion-row>
+    <ion-col class="my-class">
+     ¿Cómo se cuándo ya acabé mi proceso?
+    </ion-col>
+   </ion-row>
+   <ion-row>
+    <ion-col>
+     La plataforma esta diseñada para que el proceso sea secuencial y de esa manera tener una experiencia de usuario más fácil. Al final le aparecerá un mensaje 
+     concluyendo el proceso.
+    </ion-col>
+   </ion-row>
+   <ion-row>
+    
+    <ion-col>
+      <strong> Privacidad </strong>
+    </ion-col>
+   </ion-row>
+   <ion-row>
+    <ion-col class="my-class">
+     Para qué se utilizan los datos?
+    </ion-col>
+   </ion-row>
+   <ion-row>
+    <ion-col>
+     Los datos se utilizan únicamente para realizar los cálculos de la evaluación.
+    </ion-col>
+   </ion-row>
+   <ion-row>
+    <ion-col class="my-class">
+     ¿El sistema conserva los videos enviados?
+    </ion-col>
+   </ion-row>
+   <ion-row>
+    <ion-col>
+     Una vez que se realizan los calculos de la entrevista se eliminan los videos de la base de datos del sistema.
+    </ion-col>
+   </ion-row>
+</ion-grid>
+
+</ion-content>

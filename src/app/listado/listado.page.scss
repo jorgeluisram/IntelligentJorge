@@ -1,0 +1,34 @@
+  $colors: (
+  primary:    #4EBEEB,
+
+);
+
+.blackTheme {
+    --background: var(--ion-color-btn);
+    --ion-color-btn: #2e2e38;
+  }
+
+  .card {
+    background-color: #2e2e38; // black
+    box-shadow: none;
+  }
+
+  .small-card{
+    margin: 10px;
+    height: inherit;
+  }
+  
+  #EyQuestion{
+    --background: var(--ion-color-btn);
+    --ion-color-btn: #2e2e38;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 60%;
+    
+  }
+
+  #eyCards{
+   --padding-left: 40%;
+
+  }
